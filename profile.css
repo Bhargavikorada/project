@@ -1,0 +1,130 @@
+body, h1, h2, h3, p, ul, li, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(35, 34, 40);
+    padding: 10px 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-profile {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.user-info p {
+    font-size: 16px;
+}
+
+.user-settings {
+    width: 40%;
+}
+
+.user-settings h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.user-settings form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-settings label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-settings input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-settings button {
+    background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-details {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.user-detail {
+    margin-bottom: 20px;
+}
+
+.user-detail h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}

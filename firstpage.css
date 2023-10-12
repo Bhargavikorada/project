@@ -1,0 +1,335 @@
+body, h1, p, label, input, button, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:rgba(0,0,0,0.55);
+    background-image: url('b3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+header {
+    background-color: transparent;
+    background-blend-mode: darken;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+    padding: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.header-title{
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: "cursive", "Lucida Handwriting", "Brush Script MT", cursive;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    margin-left: 100px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-comp{
+    margin-bottom: -15px;
+}
+
+.header-comp :hover{
+    background-color: #464545;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.profile-link{
+    margin-left: 220px;
+}
+
+.logout-link a,
+.profile-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout-link a {
+    background-color: #c91b1b;
+}
+
+.logout-link a:hover{
+    background-color: #961313;
+}
+
+.logout-link a:active{
+    background-color: #d91b1b;
+}
+
+.profile-link a {
+    background-color: #1c5f60;
+}
+.profile-link a:hover {
+    background-color: #127779;
+}
+.profile-link a:active {
+    background-color: #1c5f60;
+}
+nav ul li {
+    margin:10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.dashboard, .my-books, .sell-book {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2, .my-books h2, .sell-book h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-list li {
+    flex: 0 0 calc(33.33% - 20px); 
+    text-align: center;
+}
+
+.book-list img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.content{
+    padding-top: 30px;
+}
+.img{
+    padding-top: 6px;
+}
+.book-list p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.sell-book form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sell-book label {
+    font-weight: bold;
+}
+
+.sell-book input[type="text"],
+.sell-book input[type="number"],
+.sell-book input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sell-book button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button[type="button"] {
+    padding: 10px 20px;
+    background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.categories-and-search {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(182, 189, 194);
+    border-radius: 5px;
+    padding: 9px;
+    margin-top: -20px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+}
+
+.category {
+    text-decoration: none;
+    color: #1c5f60;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.category:hover{
+    color: black;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button[type="button"] {
+    padding: 10px 20px;
+    background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .categories-and-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .categories {
+        margin-bottom: 10px;
+    }
+
+    .category {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-item {
+    flex: 0 0 calc(18.5% - 20px); 
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-item img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-name {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.book-cost {
+    font-weight: bold;
+}
+.book-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.details img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.details img:hover{
+    cursor: pointer;
+}
+.p{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 50%;
+}
+.p:hover{
+    cursor: pointer;
+    color:red;
+}
+.wishlist-button{
+    margin-left: 60px;background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}

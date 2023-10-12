@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Reselling</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body> 
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Book Reselling Logo">
+            <span class="header-title">Books Reselling</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="comp"><a href="Home.html">Home</a></li>
+                <li class="comp"><a href="#">Browse Books</a></li>
+                <li class="comp"><a href="login.`html">Sell Your Books</a></li>
+                <li class="comp"><a href="aboutus.html">About Us</a></li>
+                <li class="comp"><a href="contactus.html">Contact</a></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
+                <li><a href="signup.html" class="signup-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Books Reselling</h1>
+        <p>One-stop destination for finding, buying, and selling your favorite books.</p>
+        <a href="login.html" class="cta-button">Shop Now</a>
+        
+    </section>
+    <section class="featured-used-books">
+        <div class="heading-row">
+            <h2>Featured Used Books</h2>
+        </div>
+        <div class="scrollable-container">
+            <div class="scrollable-content">
+                <div class="book-card">
+                    <img src="books/book-1.jpg" alt="FEATUREDHSC digest of target of bio (2022)">
+                    <h3>HSC digest of targer ....</h3>
+                    <p>300₹ (Negotiable)</p>
+                    <p>School BooksScience</p>
+                </div>
+                <div class="book-card">
+                    <img src="books/book-2.jpg" alt="FEATUREDCorodova book class9">
+                    <h3>Corodova book class9</h3>
+                    <p>250₹ (Fixed)</p>
+                    <p>School BooksSTD 1-10th</p>
+                </div>
+                <div class="book-card">
+                    <img src="books/book-3.jpg" alt="FEATUREDDC PANDEY Volume 1 and 2">
+                    <h3>PANDEY Volume 1 and 2</h3>
+                    <p>450₹ (Fixed)</p>
+                    <p>MedicalMBBS</p>
+                </div>
+                <div class="book-card">
+                    <img src="books/book-4.jpg" alt="FEATUREDCollegeBoard The Official SAT Study Guide">
+                    <h3>CollegeBoard The Official SAT Study Guide</h3>
+                    <p>1,100₹ (Negotiable)</p>
+                    <p>Competitive ExamOthers</p>
+                </div>
+                <div class="book-card">
+                    <img src="books/book-5.jpg" alt="FEATUREDHSC digest of target of bio (2022)">
+                    <h3>JEE main chemistry</h3>
+                    <p>300₹ (Negotiable)</p>
+                    <p>School BooksScience</p>
+                </div>
+                <div class="book-card">
+                    <img src="books/book-6.jpg" alt="FEATUREDCollegeBoard The Official SAT Study Guide">
+                    <h3>Mechanics</h3>
+                    <p>400₹ (Negotiable)</p>
+                    <p>Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h3>Join our newsletter</h3>
+        <p>Stay updated with the latest book deals and offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Book Reselling Logo">
+            <span class="footer-title">Books Reselling</span>
+            <p class="footer-text">Best Recycle is Book Recycle. Keep Your Books Flowing.</p>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Sell Old Books Online</h2>
+                <p>Book Reselling is a platform for buying, selling, and trading books. Sell and buy old books online with ease.</p>
+            </div>
+            <div class="footer-section">
+                <div class="follow-us">
+                    <h3>Follow Us</h3>
+                    <a href="#" class="social-media-link">
+                        <img src="logos/facebook-icon.png" alt="Facebook">
+                        Facebook
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="logos/instagram-icon.png" alt="Instagram">
+                        Instagram
+                    </a>
+                    <a href="#" class="social-media-link">
+                        <img src="logos/twitter-icon.png" alt="Twitter">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul class="quick-links">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="privacy.html">privacy-policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required><br><br>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" name="signupName" required><br><br>
+
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required><br><br>
+
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required><br><br>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List a Book for Sale - Book Reselling</title>
+    <link rel="stylesheet" href="firstpage.css">
+    <link rel="stylesheet" href="sellbooks.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Book Reselling Logo">
+            <span class="header-title">Books Reselling</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="header-comp"><a href="firstpage.html">Home</a></li>
+                <li class="header-comp"><a href="mybooks.html">My Books</a></li>
+                <li class="header-comp"><a href="sellbooks.html">Sell Books</a></li>
+                <li class="header-comp"><a href="buybooks.html">Buy Books</a></li>
+                <li class="header-comp"><a href="review.html">Book Review</a></li>
+                <li class="profile-link"><a href="profile.html">Profile</a></li>
+                <li class="logout-link"><a href="Home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sell-book">
+            <h2>List a Book for Sale</h2>
+            <form>
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Competitive">Competitive</option>
+                    <option value="School-Text">School-Text</option>
+                </select>
+
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory" name="subcategory" required disabled class="subcategory">
+                    <option value="">Select a subcategory</option>
+                </select>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="bookImage">Book Image:</label>
+                <input type="file" id="bookImage" name="bookImage" accept="image/*" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">List for Sale</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

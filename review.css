@@ -1,0 +1,208 @@
+body, h1, p, label, input, button, ul, li, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(35, 34, 40);
+    padding: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.header-title {
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: "cursive", "Lucida Handwriting", "Brush Script MT", cursive;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    margin-left: 100px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-comp {
+    margin-bottom: -15px;
+}
+
+.header-comp :hover {
+    background-color: #464545;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.profile-link {
+    margin-left: 220px;
+}
+
+.logout-link a,
+.profile-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout-link a:hover {
+    background-color: #c91b1b;
+}
+
+.logout-link a:active {
+    background-color: #d91b1b;
+}
+
+.profile-link a {
+    background-color: #1c5f60;
+}
+
+.profile-link a:hover {
+    background-color: #127779;
+}
+
+.profile-link a:active {
+    background-color: #1c5f60;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-reviews, .write-review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-reviews h2, .write-review h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.review-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.user-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info span {
+    font-weight: bold;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.write-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.write-review label {
+    font-weight: bold;
+}
+
+.write-review input[type="text"],
+.write-review textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.write-review textarea {
+    resize: vertical;
+}
+
+.write-review button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #1c5f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .book-reviews, .write-review {
+        padding: 10px;
+    }
+
+    .review-list li {
+        padding: 10px;
+    }
+}

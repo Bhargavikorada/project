@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a Book - Book Reselling Platform</title>
+    <link rel="stylesheet" href="firstpage.css">
+    <link rel="stylesheet" href="buybooks.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Book Reselling Logo">
+            <span class="header-title">Books Reselling</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="header-comp"><a href="firstpage.html">Home</a></li>
+                <li class="header-comp"><a href="mybooks.html">My Books</a></li>
+                <li class="header-comp"><a href="sellbooks.html">Sell Books</a></li>
+                <li class="header-comp"><a href="buybooks.html">Buy Books</a></li>
+                <li class="header-comp"><a href="review.html">Book Review</a></li>
+                <li class="profile-link"><a href="profile.html">Profile</a></li>
+                <li class="logout-link"><a href="Home.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-books">
+            <h2>Buy a Book</h2>
+            <form>
+                <label for="search">Search for Books:</label>
+                <input type="text" id="search" name="search" placeholder="Enter book title, author, or category">
+                
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="all">All Categories</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                </select>
+                
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory" name="subcategory">
+                    <option value="all">All Subcategories</option>
+                </select>                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="book-listings">
+            <h2>Available Books</h2>
+            <ul class="book-list">
+                <li>
+                    <img src="book1.jpg" alt="Book Title 1">
+                    <p>Book Title 1 - Author 1</p>
+                    <p>Category: Fiction</p>
+                    <p>Price: $10.99</p>
+                    <button type="button">Buy Now</button>
+                </li>
+                <li>
+                    <img src="book2.jpg" alt="Book Title 2">
+                    <p>Book Title 2 - Author 2</p>
+                    <p>Category: Non-Fiction</p>
+                    <p>Price: $12.99</p>
+                    <button type="button">Buy Now</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

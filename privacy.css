@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    color: gray;
+}
+
+p {
+    line-height: 1.5;
+    color: gray;
+}
+
+.privacy-policy{ 
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
